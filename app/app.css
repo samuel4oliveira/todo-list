@@ -13,6 +13,7 @@ body {
     margin: 0 auto;
     border-radius: 5px;
     margin-top: 100px;
+    padding-bottom: 4px;
 }
 
 .header {
@@ -93,6 +94,10 @@ body {
     text-decoration: line-through;
 }
 
-/* .display-input {
+.display-input {
     display: none;
-} */
+}
+
+.delete-todo {
+    display: none;
+}
