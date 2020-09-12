@@ -39,6 +39,10 @@ body {
     border-color: rgba(110, 68, 255, 0.1);
 }
 
+.todos img {
+    height: 15px;
+}
+
 .todos {
     margin-top: 15px;
 }
@@ -79,6 +83,9 @@ body {
 
 .todos input:focus{
     outline: none;
+    color: #ffffff;
+    font-size: 15px;
+    text-indent: 5px;
 }
 
 .center-input {

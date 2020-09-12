@@ -59,7 +59,7 @@ function inputEvents() {
         if(event.keyCode === 13 && todosCounter < 13) {
             //Receive Todo
             let text = todoInput.value;
-            let li = "<li><span class='deleteButton'>X</span> "+ text + "</li>"; 
+            let li = "<li><span class='deleteButton'><img src='../img/delete.svg' alt='Delete Todo'></span> " + text + "</li>"; 
             todoInput.value = "";
             
             //Updating Todo List Variables
