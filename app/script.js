@@ -2,6 +2,7 @@ let todosUl = document.querySelector("#todosUl");
 let todos = document.querySelectorAll(".todos li");
 let todoInput = document.querySelector(".todos input");
 let addTodoButton = document.querySelector(".header img");
+let inputSwitch = document.querySelector(".center-input-hided");
 let deleteButton = document.querySelectorAll(".todos .deleteButton");
 let todosCounter = document.querySelectorAll("li:not(.delete-todo)").length;
 
@@ -46,7 +47,10 @@ function deleteEvents() {
 
 function addEvents() {
     addTodoButton.addEventListener("click", function(){
-        todoInput.classList.toggle("display-input");
+        todoInput.classList.toggle("hide-input");
+        todoInput.classList.toggle("show-input");
+        inputSwitch.classList.toggle("center-input");
+        inputSwitch.classList.toggle("center-input-hided");
     });
 }
 
@@ -55,7 +59,7 @@ function inputEvents() {
         if(event.keyCode === 13 && todosCounter < 13) {
             //Receive Todo
             let text = todoInput.value;
-            let li = "<li><span class='deleteButton'>X</span>"+ text + "</li>"; 
+            let li = "<li><span class='deleteButton'>X</span> "+ text + "</li>"; 
             todoInput.value = "";
             
             //Updating Todo List Variables

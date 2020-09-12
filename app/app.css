@@ -43,13 +43,30 @@ body {
     margin-top: 15px;
 }
 
-.todos input{
+.todos input {
     border-color: #1F1F2E;
     background-color: #1F1F2E;
-    width: 375px;
-    height: 25px;
     border-radius: 5px;
     border-style: solid;
+}
+
+.hide-input {
+    border: 0;
+    padding: 0;
+    visibility: hidden;
+    opacity: 0;
+    width: 375px;
+    max-height: 0;
+    transition: max-height 0.5s, opacity 0.5s, visibility 0.5s;
+}
+
+.show-input {
+    visibility: visible;
+    opacity: 1;
+    width: 375px;
+    height: 25px;
+    max-height: 25px;
+    transition: max-height 0.5s;
 }
 
 .todos input::placeholder {
@@ -66,6 +83,14 @@ body {
 
 .center-input {
     text-align: center;
+    max-height: 31px;
+    transition: max-height 0.4s;
+}
+
+.center-input-hided {
+    text-align: center;
+    max-height: 0;
+    transition: max-height 0.4s;
 }
 
 .todos ul {
@@ -92,10 +117,6 @@ body {
 .todo-done {
     color: #44445B;
     text-decoration: line-through;
-}
-
-.display-input {
-    display: none;
 }
 
 .delete-todo {
