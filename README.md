@@ -1,4 +1,4 @@
 # todo-list
 📃Uma simples Todo List
 
-![Todo List Example](img/example.gif)
+![Todo List Example](app/assets/img/example.gif)

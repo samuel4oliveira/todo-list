@@ -2,7 +2,7 @@ let todosUl = document.querySelector("#todosUl");
 let todos = document.querySelectorAll(".todos li");
 let todoInput = document.querySelector(".todos input");
 let addTodoButton = document.querySelector(".header img");
-let inputSwitch = document.querySelector(".center-input-hided");
+let inputSwitch = document.querySelector(".center-input");
 let deleteButton = document.querySelectorAll(".todos .deleteButton");
 let todosCounter = document.querySelectorAll("li:not(.delete-todo)").length;
 
@@ -56,10 +56,10 @@ function addEvents() {
 
 function inputEvents() {
     todoInput.addEventListener("keyup", function(event){
-        if(event.keyCode === 13 && todosCounter < 13) {
+        if(event.keyCode === 13) {
             //Receive Todo
             let text = todoInput.value;
-            let li = "<li><span class='deleteButton'><img src='../img/delete.svg' alt='Delete Todo'></span> " + text + "</li>"; 
+            let li = "<li><span class='deleteButton'><img src='./assets/img/delete.svg' alt='Delete Todo'></span> " + text + "</li>"; 
             todoInput.value = "";
             
             //Updating Todo List Variables

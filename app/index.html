@@ -3,32 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="app.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📃</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/app.css">
     <title>Todo List</title>
 </head>
 <body>
     <div class="container">
         <div class="header">
             <h1>To-Do List</h1>
-            <img src="../img/add.svg" alt="Add Todo">
+            <img src="./assets/img/add.svg" alt="Add Todo">
             <hr>
         </div>
 
         <div class="todos">
-            <div class="center-input-hided">
-                <input class="hide-input" type="text" maxlength="41" placeholder="Enter your new todo">
+            <div class="center-input">
+                <input class="show-input" type="text" maxlength="41" placeholder="Enter your new todo">
             </div>
 
-            <ul id="todosUl"> 
-                <li><span class="deleteButton"><img src="../img/delete.svg" alt="Delete Todo"></span> Levantamento bibliográfico</li>
-                <li><span class="deleteButton"><img src="../img/delete.svg" alt="Delete Todo"></span> Elaborar documentação</li>
-                <li><span class="deleteButton"><img src="../img/delete.svg" alt="Delete Todo"></span> Desenvolver protótipo</li>
-                <li><span class="deleteButton"><img src="../img/delete.svg" alt="Delete Todo"></span> Desenvolver Front-End</li>
-                <li><span class="deleteButton"><img src="../img/delete.svg" alt="Delete Todo"></span> Desenvolver Back-End</li>
-            </ul>
+            <ul id="todosUl"></ul>
         </div>
     </div>
 
-    <script src="script.js" fill="currentColor"></script>
+    <script src="./script/script.js" fill="currentColor"></script>
 </body>
 </html>
